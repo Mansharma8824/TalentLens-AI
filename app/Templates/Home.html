@@ -7,6 +7,75 @@
     <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
 </head>
 <body>
-    <p>Hi</p>
+    <nav class="navbar">
+        <div class="logo">TalentlensAI</div>
+        <ul class="nav-links">
+            <li><a href="">Home</a></li>
+            <li><a href="">Features</a></li>
+            <!-- <li><a href="">How it works</a></li> -->
+            <li><a href="">About</a></li>
+            <li><a href="">Contect</a></li>
+        </ul>
+        <div class="nav-buttons">
+            <a href="{{url_for('login')}}" class="btn-login">Login</a>
+            <a href="{{url_for('signup')}}" class="btn-register">Register</a>
+        </div>
+    </nav>
+    <section class="hero">
+        <div class="hero-content">
+
+            <h1>
+                AI Resume Screening &
+                <span>Interview Assistant</span>
+            </h1>
+            <p>
+                Analyze resumes with AI, compare candidates against job descriptions,
+                calculate ATS scores, identify missing skills, and generate interview
+                questions in just a few seconds.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#" class="btn-primary">
+                    Get Started
+                </a>
+
+                <a href="#" class="btn-secondary">
+                    Learn More
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="hero-image">
+
+            <div class="resume-card">
+
+                <h3>Resume Analysis</h3>
+
+                <p>Python ✔</p>
+
+                <p>Flask ✔</p>
+
+                <p>SQL ✔</p>
+
+                <p>Docker ✔</p>
+
+                <p>AWS ✖</p>
+
+                <div class="score">
+
+                    ATS Score
+
+                    <span>92%</span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
 </body>
 </html>
